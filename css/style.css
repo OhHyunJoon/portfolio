@@ -503,8 +503,11 @@ body {
             }
             .button-wrap {
               position: relative;
-              top: 6%;
-              width: 21%;
-              left: 50%;
+              top: -48%;
+              width: 100px;
+              left: 88%;
               transform: translateX(-50%);
-            }
+          }
+          .swiper-button-next:after, .swiper-button-prev:after {
+            font-size: 30px;
+          }
