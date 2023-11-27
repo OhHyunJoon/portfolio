@@ -1,0 +1,49 @@
+@charset 'utf-8';
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul,li { list-style: none; }
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(130, 130, 130, 0.6);
+    z-index: 100;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+header nav ul li {
+    margin: 0 20px;
+}
+.fp-slidesNav ul {
+    text-align: center;
+}
+.fp-controlArrow.fp-prev {
+    left: 200px;
+    background: url('../image/arrow_left_on.png')no-repeat center;
+    background-size: 21px 41px;
+    width: 41px;
+    height: 51px;
+    border: 0;
+}
+.fp-controlArrow.fp-next {
+    right: 150px;
+    background: url('../image/arrow_right_on.png')no-repeat center;
+    background-size: 21px 41px;
+    width: 41px;
+    height: 51px;
+    border: 0;
+}
+.fp-tableCell {
+    text-align: center;
+}
+
+
+section:nth-child(3) {
+    height: 2000px !important;
+}

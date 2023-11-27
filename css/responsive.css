@@ -1,0 +1,110 @@
+
+@media screen and (max-width:1482px) {
+    .swiper-slide .btm .left,.swiper-slide .btm .right {width: 120px;}
+    .swiper-slide .btm .left,.swiper-slide .btm .right {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:1319px) {
+    .header nav{top: 89%;}
+    .footer .left span {
+        transform: rotate(0);
+    }
+    .footer .left {
+        top: 2%;
+    left: 44%;
+    height: 120px;
+    }
+    .footer .left strong {
+        left: 45px;
+    }
+    .footer .left::after {
+        left: 34px;
+    }
+    #wrapp h1 {
+        top: 15%;
+    }
+    .footer .right {
+        left: -92%;
+    }
+    
+}
+@media screen and (max-width:1207px) {
+    .header h1 {
+        display: none;
+    }
+    .f01 .profile-box .profile-text > h2 > span {
+        font-size: 3rem;
+    }
+    .f01 .profile-box .profile-text > h2 {
+        font-size: 1rem;
+    }
+    .footer .left {
+        display: none;
+    }
+}
+@media screen and (max-width:1016px) {
+    .about .fovu {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:808px) {
+    .infoma {
+        font-size: 10px;
+    }
+    .about .fovu {
+        font-size: .9rem;
+    }
+    .about .fovu span.big-text {
+        font-size: 1rem;
+    }
+    .footer .right {
+        left: -72%;
+    }
+}
+@media screen and (max-width:734px) {
+    .f01 .profile-box .profile-text > h2 > span {
+        font-size: 2rem;
+    }
+    .about .fovu {
+        font-size: .7rem;
+    }
+    #form_wrapp  {
+        top: 42%;
+    }
+    .header .cover_btn i {
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width:600px){
+    .about {
+        width: 90%;
+    }
+    .button-wrap {
+        display: none;
+    }
+    #wrapp h1 {
+        font-size: 1rem;
+    }
+    .swiper-slide .btm .left,.swiper-slide .btm .right {width: 100px;}
+}
+
+@media screen and (max-width:532px){
+
+    #form_wrapp:before {
+        content: none;
+    }
+    #form_wrapp:after {
+        content: none;
+    }
+    form {
+        width: 50%;
+        height: 65%;
+        position: absolute;
+    left: 50%; transform: translateX(-50%);
+    }
+    #wrapp {
+        width: 100%;
+    }
+    
+}
