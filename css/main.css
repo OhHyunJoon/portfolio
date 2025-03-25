@@ -1,0 +1,331 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'ongle';
+  src: url('../font/온글잎\ 공부잘하자나.TTF');
+}
+@font-face {
+  font-family: 'prenB';
+  src: url('../font/Pretendard-Bold.woff2');
+}
+@font-face {
+  font-family: 'prenR';
+  src: url('../font/Pretendard-Regular.woff2');
+}
+@font-face {
+  font-family: 'prenL';
+  src: url('../font/Pretendard-Light.woff2');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.main {
+    padding-top: 110px;
+    background-color: #000;
+    box-sizing: border-box;
+    overflow: hidden;
+
+  }
+  .main .introduction {
+    color: #fff;
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    transform: translateY(-50%);
+    
+    font-family: 'ongle';
+  }
+  .main .introduction h2 {
+    font-size: 124px;
+  }
+  .main .introduction p {
+    font-size: 48px;
+    margin-top: 150px;
+  }
+.path {
+fill: none;
+stroke: #f2f2f2;
+stroke-width: 3px;
+}
+
+.path1 {
+stroke-dasharray: 6884;
+animation: drawPath1 1s linear, floating 2.2s linear infinite;
+}
+
+.content {
+background-color: #f1f1f1;
+position: relative;
+}
+.content .work {
+  width: 700px;
+  height: 349px;
+  border-radius: 30px;
+  border: solid #000 3px;
+  box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+  transition:.5s;
+  transform: perspective(800px) rotateY(0deg);
+  position: relative;
+  transform-style: preserve-3d;
+}
+.fade {
+  position: absolute;
+}
+.fade1 {
+  top: 3%;
+  left: 5%;
+}
+.fade2 {
+  top: 17%;
+  left: 5%;
+}
+.fade3 {
+  left: 5%;
+  top: 31%;
+}
+.fade4 {
+  left: 5%;
+  top: 45%;
+}
+.fade5 {
+  top: 59%;
+  right: 5%;
+}
+.fade6 {
+  top: 73%;
+  right: 5%;
+}
+.fade7 {
+  top: 87%;
+  right: 5%;
+}
+.content2 .work,.content3 .work {
+  border: solid #fff 3px;
+}
+.content .work1 a {
+  display: block;
+}
+.content .work:hover {
+  transform:perspective(800px) rotateY(180deg);
+}
+.content .work .work-front, .content .work .work-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+.content .work1 .work-front {
+  background: url('../img/kolon.png')no-repeat;
+  background-size: 100%;
+  transform: rotateY(0deg);
+}
+.content .work .work-back {
+  padding: 40px 60px;
+  background-color: #efefef;
+  font-family: 'prenB';
+  transform: rotateY(180deg);
+}
+
+.content .work .work-back .logo {
+  width: 270px;
+  height: 49px;
+}
+.content .work .work-back .logo img {
+  width: 100%;
+  height: 100%;
+}
+.content .work .work-back ul {
+  padding: 10px 0;
+  margin-top: 30px;
+  border-bottom: solid 1px #111;
+    border-top: solid 1px #111;
+}
+.content .work .work-back ul li {
+  margin-top: 10px;
+  font-size: 28px;
+  color: #000;
+}
+.content .work5 .work-back{
+  background-color: #1a1a1a;
+}
+.content .work5 .work-back ul,.content .work6 .work-back ul,.content .work7 .work-back ul {
+  border-bottom: solid 1px #fff;
+  border-top: solid 1px #fff;
+}
+.content .work5 .work-back ul li,.content .work6 .work-back ul li,.content .work7 .work-back ul li {
+  color: #fff;
+}
+.content .work6 .work-back,.content .work7 .work-back {
+  background-color: #1a1a1a;
+}
+.content .work .work-back ul li span {
+  font-family: 'prenR';
+}
+.content .work .work-back ul li p {
+  display: inline-block;
+  width: 120px;
+}
+.content .work1 .color1 {
+  background-color: #fff;
+}
+.content .work1 .color2 {
+  background-color: #0078c3;
+}
+.content .color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.content1 .work2 .color1 {
+  background-color: #000;
+}
+.content1 .work2 .color2 {
+  background-color: #111;
+}
+.content1 .work2 .color3 {
+  background-color: #fff;
+}
+.content1 .work2 .work-front {
+  background: url('../img/genesis.png')no-repeat;
+  background-size: 100%;
+}
+.content1 .work3 .work-front {
+  background: url('../img/Twosome.png')no-repeat;
+  background-size: 100%;
+}
+.content1 .work3 .color1 {
+  background-color: #222;
+}
+.content1 .work3 .color2 {
+  background-color: #fff;
+}
+.content1 .work4 .color1 {
+  background-color: #292F32;
+}
+.content1 .work4 .color2 {
+  background-color: #fafafa;
+}
+.content1 .work4 .work-front{
+  background: url('../img/CMS.png')no-repeat;
+  background-size: 100%;
+}
+.content1 .work4 .work-back .logo {
+  width: 125px;
+}
+.content2 {
+background-color: #000;
+}
+.content .work5 .color1 {
+  background-color: #2a5fea;
+}
+.content .work5 .color2 {
+  background-color: #fff;
+}
+.content .work5 .work-front {
+  background: url('../img/robotori.png') no-repeat;
+  background-size: 100%;
+}
+
+.content .work6 .work-front {
+  background: url('../img/raint.jpg') no-repeat;
+  background-size: 100%;
+}
+.content .work6 .color1 {
+  background-color: #ebebeb;
+}
+.content .work6 .color2 {
+  background-color: #fff;
+}
+.content .work7 .color1 {
+  background-color: #eeb007;
+}
+.content .work7 .color2 {
+  background-color: #fff;
+}
+
+.content .work7 .work-front {
+  background: url('../img/dabo.jpg') no-repeat;
+  background-size: 100%;
+}
+.content .work7 .work-back .logo {
+  width: 150px;
+}
+.path2 {
+stroke: #000;
+}
+
+.content2 {
+background-image: url("./newzealand.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.content2 .about {
+  position: absolute;
+    left: 5%;
+    bottom: 20%;
+    color: #fff;
+}
+.content2 .about h2 {
+  font-family: 'prenB';
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.content2 .about p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'prenR';
+}
+.content2 .about span {
+  font-family: 'prenL';
+}
+.content2 .about .skill span {
+  font-family: 'prenR';
+  font-size: 20px;
+}
+.content2 .about div {
+  margin-bottom: 50px;
+}
+.content3 {
+background-color: #1a1a1a;
+}
+.content3 .profile {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  color: #fff;
+}
+.content3 .profile h2 {
+  font-size: 32px;
+  font-family: 'prenB';
+  margin-bottom: 30px;
+}
+.content3 .profile p {
+  font-family: 'prenL';
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.footer {
+height: 20vh;
+background-color: #000;
+}
+.footer h3 {
+  font-size: 56px;
+  font-family: 'prenB';
+  color: #fff;
+  text-align: center;
+  line-height: 20vh;
+}
